@@ -1,0 +1,30 @@
+{
+  "name": "sv-hohenfichte",
+  "version": "1.0.0",
+  "description": "Vereinswebsite",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "npm run build && next export",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1uweb/sv-hohenfichte.git"
+  },
+  "author": "Uwe Barthel, SV-Hohenfichte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1uweb/sv-hohenfichte/issues"
+  },
+  "homepage": "https://github.com/1uweb/sv-hohenfichte#readme",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^7.0.2",
+    "node-sass": "^4.10.0",
+    "nprogress": "^0.2.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  }
+}
