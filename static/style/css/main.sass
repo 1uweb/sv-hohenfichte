@@ -1,31 +1,224 @@
+@charset "UTF-8"
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Raleway:300,400,500,700')
 
+body 
+    margin: 0
+    padding: 0
 
-/* Preloader
-    
+html, body 
+    width: 100%
+    height: 100%
+    background: #fff
+    color: #191919
+    font-size: 10px
+    font-family: 'Raleway', sans-serif
+
+h1, h2, h3, h4, h5, h6 
+    hyphens: auto
+    font-family: 'Lora', serif;
+    font-weight: 700
+
+* 
+    box-sizing: border-box
+    hyphens: auto
+
+::selection 
+    color: #fff
+    background: #425c51
+    text-shadow: none
+
+body main span 
+    padding: 1rem 2rem
+    font-size: 1.3rem
+    background: #425c51
+    border-radius: 5rem
+    font-weight: 700
+
+a 
+    text-decoration: none
+    color: #425c51
+    position: relative
+
+a:hover::after 
+    transform: scaleX(1)
+    transform-origin: left
+
+a::after 
+    content: ""
+    position: absolute
+    bottom: -4px
+    left: 0
+    width: 100%
+    height: 2px
+    background-color: #425c51
+    transition: transform .25s cubic-bezier(0.65, 0.05, 0.36, 1)
+    transform-origin: right
+    transform: scaleX(0)
+
+.spotlight-parallax 
+    height: 60rem
+    background: transparent
+
+button
+    padding: 1.25rem 5rem
+    background: #425c51
+    border: .175rem #9b182b solid
+    font-family: 'Raleway', sans-serif
+    font-weight: 600
+    color: #fff
+    font-size: 1.7rem
+    cursor: pointer
+    transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1)
+
+button:hover 
+    background: #cd1739
+
+.content-container 
+    padding: 8rem 0
+
+.content-container-innen
+    margin: 4rem 0
+
+*, ::after, ::before 
+    transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1) !important
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1) !important
+
+.cc-window.cc-floating.cc-type-info.cc-theme-edgeless.cc-bottom.cc-right.cc-color-override-2003282644 a::after 
+    content: none
+
+.wrapper
+    max-width: 128rem
+    margin: 0 auto
+    padding: 0 1rem
+
+hr 
+    width: 5rem
+    opacity: .25
+
+html.sr .load-hidden 
+    visibility: hidden
+
 #nprogress
-    
+  pointer-events: none
+  z-index: 1500
 
-  #nprogress .bar
-    background: #29d
+#nprogress .bar
+    background: #425c51
     position: fixed
     z-index: 1031
     top: 0
     left: 0
     width: 100%
-    height: 2px
-  
-  
-  /* Fancy blur effect */
-  #nprogress .peg 
+    height: .25rem
+
+/* Fancy blur effect */
+#nprogress .peg 
     display: block
     position: absolute
     right: 0px
     width: 100px
     height: 100%
-    box-shadow: 0 0 10px #29d, 0 0 5px #29d
+    box-shadow: 0 0 10px #425c51, 0 0 5px #425c51
     opacity: 1.0
     -webkit-transform: rotate(3deg) translate(0px, -4px)
-        -ms-transform: rotate(3deg) translate(0px, -4px)
-            transform: rotate(3deg) translate(0px, -4px)
+    -ms-transform: rotate(3deg) translate(0px, -4px)
+    transform: rotate(3deg) translate(0px, -4px)
+
+/* Header
+
+.global-nav 
+    width: 100%
+    height: 8rem
+    background: #fafafa
+    border-bottom: .1rem solid #DDD
+    line-height: 8rem
+    font-size: 1.3rem
+    z-index: 1000
+    position: relative
+    top: 0
+    font-weight: 500
+
+.global-nav .logo-global
+    float: left
+    width: 6rem
+    height: 6rem
+    background: url('https://static.uwe-barthel.net/sv-hohenfichte.de/logos/logo-verein.png')
+    background-size: cover
+    margin: 1rem 0
+
+.global-nav .logo-global::after
+    content: none
+
+.global-nav nav
+    float: left
+
+.global-nav nav ul      
+    display: flex
+    padding: 0
+    margin: 0
+    list-style: none
+
+.global-nav nav ul li
+    margin: 0 4rem
+
+.global-nav nav ul li a
+  color: #191919
+
+.global-nav nav ul li a::after
+  background-color: #191919
+
   
-  
+/* Footer
+
+footer
+    width: 100%
+    padding: 0
+    font-size: 1.3rem
+
+footer .home-nav
+    width: 100%
+    line-height: 5rem
+    background: #DDD
+
+footer .home-nav ul
+    display: flex
+    justify-content: center
+    list-style: none
+    padding: 0
+    margin: 0
+
+footer .home-nav ul li
+    margin: 0 2.5rem
+
+footer .home-nav ul li a
+  color: #191919
+
+footer .home-nav ul li a::after
+  background-color: #191919
+
+footer .legal-nav
+    width: 100%
+    line-height: 7rem
+    background: #EEE
+
+footer .legal-nav .copyright
+    float: left
+
+footer .legal-nav nav
+    float: right
+
+footer .legal-nav nav ul
+    display: flex
+    justify-content: center
+    list-style: none
+    padding: 0
+    margin: 0
+
+footer .legal-nav nav ul li
+    margin: 0 2.5rem
+
+footer .legal-nav nav ul li a
+  color: #191919
+
+footer .legal-nav nav ul li a::after
+  background-color: #191919

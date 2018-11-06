@@ -3,13 +3,12 @@ import NextHead from 'next/head'
 import css from '../static/style/css/main.sass'
 import Navigation from '../components/header'
 import BrandFoot from '../components/footer'
-import HeadTag from '../components/head'
 
 const Index = () => (
     <div className="app-root">
         <NextHead>
             <meta charSet="UTF-8" />
-            <title>Home | Schützenverein Hohenfichte</title>
+            <title>Kontakt | Schützenverein Hohenfichte</title>
             <meta name="description" content="Der Schützenverein Hohenfichte schießt mit historischen und modernen Armbrüsten. Informationen über den Verein, das Vereinsleben, Vorstand und Satzung. Höhepunkt ist das alle 2 Jahre stattfindende Schützen- und Brückenfest neben der 400-Jahre alten Holzbrücke in Hohenfichte." />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://static.uwe-barthel.net/sv-hohenfichte.de/favicons/apple-touch-icon-57x57.png" />
@@ -34,17 +33,6 @@ const Index = () => (
             <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
         </NextHead>
         <Navigation></Navigation>
-        <main className="app-container">
-            <section className="hero-app">
-                <div className="text">
-                    <div className="wrapper">
-                        <h1>Schützenverein Hohenfichte</h1>
-                    </div>
-                </div>
-                <div className="gradient-bg"></div>
-                <div className="bild-bg"></div>
-            </section>
-        </main>
         <BrandFoot></BrandFoot>
     </div>
 )
