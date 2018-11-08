@@ -1,4 +1,3 @@
-import NextHead from 'next/head'
 import NProgress from 'nprogress'
 import Router from 'next/router'
 import Index from '../pages/verein'

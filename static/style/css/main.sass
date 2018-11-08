@@ -62,7 +62,7 @@ a::after
 button
     padding: 1.25rem 5rem
     background: #425c51
-    border: .175rem #9b182b solid
+    border: .25rem #8caa9d solid
     font-family: 'Raleway', sans-serif
     font-weight: 600
     color: #fff
@@ -71,7 +71,7 @@ button
     transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1)
 
 button:hover 
-    background: #cd1739
+    background: #658979
 
 .content-container 
     padding: 8rem 0
@@ -91,6 +91,11 @@ button:hover
     margin: 0 auto
     padding: 0 1rem
 
+.responsive
+    width: 100%
+    margin: 2.5rem 0
+    box-shadow: .25rem .5rem 5rem rgba(0,0,0,.25)
+
 hr 
     width: 5rem
     opacity: .25
@@ -99,8 +104,8 @@ html.sr .load-hidden
     visibility: hidden
 
 #nprogress
-  pointer-events: none
-  z-index: 1500
+    pointer-events: none
+    z-index: 1500
 
 #nprogress .bar
     background: #425c51
@@ -162,12 +167,114 @@ html.sr .load-hidden
     margin: 0 4rem
 
 .global-nav nav ul li a
-  color: #191919
+    color: #191919
 
 .global-nav nav ul li a::after
-  background-color: #191919
+    background-color: #191919
 
-  
+/* Content
+
+.hero-app
+    width: 100%
+    height: 92rem
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    background-image: url('https://static.uwe-barthel.net/sv-hohenfichte.de/header/4.jpg')
+    background-position: center
+    background-size: cover
+    font-size: 2.5rem
+    color: #fafafa
+    text-align: center
+
+.hero-app-fest
+    width: 100%
+    height: 92rem
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    background-image: url('https://static.uwe-barthel.net/sv-hohenfichte.de/header/5.jpg')
+    background-position: center
+    background-size: cover
+    font-size: 3rem
+    color: #fafafa
+    text-align: center
+
+.hero-app h1
+    margin: 0
+    padding: 2rem 0
+    text-shadow: 0 .2rem .5rem rgba(0,0,0,.5)
+
+.hero-app-fest h1
+    margin: 0
+    padding: 2rem 0
+    text-shadow: 0 .2rem .5rem rgba(0,0,0,.5)
+
+.hero-app-fest h2
+    margin: 0
+    padding: 1rem 0
+    text-shadow: 0 .2rem .5rem rgba(0,0,0,.5)
+
+.mitglieder-werden .button-werben::after
+    content: none
+
+.welcome h1 
+    font-size: 3.5rem
+    text-align: center
+
+.welcome p
+    font-size: 1.4rem
+    line-height: 1.5
+
+.fest
+    background: #F5F5F5
+
+.fest h1
+    font-size: 3.5rem
+    text-align: center
+
+.fest p
+    font-size: 1.4rem
+    line-height: 1.5
+
+.fest-section h1
+    font-size: 3.5rem
+    text-align: center
+
+.fest-section h2
+    font-size: 2.5rem
+    text-align: center
+
+.fest-section p
+    font-size: 1.4rem
+    text-align: center
+
+.regatta
+    background: #F5F5F5
+
+.karte
+    background: #F5F5F5
+
+.mitglieder-werden
+    width: 100%
+    background: url('https://static.uwe-barthel.net/sv-hohenfichte.de/header/11.jpg')
+    background-size: cover
+    background-position: center
+    color: #fafafa
+    text-align: center
+
+.mitglieder-werden h1
+    font-size: 2.5rem
+    padding: 1rem 0
+    margin: 0
+
+.mitglieder-werden p
+    font-size: 1.4rem
+    font-weight: 500
+    padding: 0 0 .5rem 0
+
 /* Footer
 
 footer
@@ -191,10 +298,10 @@ footer .home-nav ul li
     margin: 0 2.5rem
 
 footer .home-nav ul li a
-  color: #191919
+    color: #191919
 
 footer .home-nav ul li a::after
-  background-color: #191919
+    background-color: #191919
 
 footer .legal-nav
     width: 100%
@@ -218,7 +325,26 @@ footer .legal-nav nav ul li
     margin: 0 2.5rem
 
 footer .legal-nav nav ul li a
-  color: #191919
+    color: #191919
 
 footer .legal-nav nav ul li a::after
-  background-color: #191919
+    background-color: #191919
+
+/* Error */
+
+.error-root 
+    width: 100%
+    height: 100vh
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+
+.error-root h1
+    font-size: 3rem
+    padding: 0 1rem
+    border-right: .1rem solid #191919
+
+.error-root p
+    font-size: 1.4rem
+    margin: 0 1rem

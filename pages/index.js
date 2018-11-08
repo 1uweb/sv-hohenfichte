@@ -35,14 +35,27 @@ const Index = () => (
         </NextHead>
         <Navigation></Navigation>
         <main className="app-container">
-            <section className="hero-app">
-                <div className="text">
-                    <div className="wrapper">
-                        <h1>Schützenverein Hohenfichte</h1>
-                    </div>
+            <section className="hero-app"></section>
+            <section className="welcome content-container">
+                <div className="wrapper">
+                    <h1>Verein mit Tradition.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis orci ac sapien fermentum vulputate. Aliquam viverra egestas odio ut feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse cursus pellentesque erat. Proin id lectus auctor augue tincidunt aliquam accumsan id massa. Quisque blandit nisi sed feugiat venenatis. Ut venenatis tempus mauris non ultricies. Phasellus porttitor enim in nibh sagittis ultrices. Quisque erat lacus, auctor vitae odio in, lacinia bibendum nibh. Vivamus dictum et enim id ullamcorper. In interdum, est vitae iaculis efficitur, elit ipsum maximus lorem, a dignissim purus leo sed arcu. </p>
+                    <img src="https://static.uwe-barthel.net/sv-hohenfichte.de/body/holzbruecke-hohenfichte-2012.jpg" className="responsive"></img>
                 </div>
-                <div className="gradient-bg"></div>
-                <div className="bild-bg"></div>
+            </section>
+            <section className="fest content-container">
+                <div className="wrapper">
+                    <h1>Feste die in Erinnerung bleiben!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis orci ac sapien fermentum vulputate. Aliquam viverra egestas odio ut feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse cursus pellentesque erat. Proin id lectus auctor augue tincidunt aliquam accumsan id massa. Quisque blandit nisi sed feugiat venenatis. Ut venenatis tempus mauris non ultricies. Phasellus porttitor enim in nibh sagittis ultrices. Quisque erat lacus, auctor vitae odio in, lacinia bibendum nibh. Vivamus dictum et enim id ullamcorper. In interdum, est vitae iaculis efficitur, elit ipsum maximus lorem, a dignissim purus leo sed arcu. </p>
+                    <img src="https://static.uwe-barthel.net/sv-hohenfichte.de/body/5.jpg" className="responsive"></img>
+                </div>
+            </section>
+            <section className="mitglieder-werden content-container">
+                <div className="wrapper">
+                    <h1>Wollen sie Mitglied werden?</h1>
+                    <p>Jetzt Mitgliederantrag einreichen!</p>
+                    <Link href="/mitglieder"><a className="button-werben"><button>Jetzt Mitglied werden!</button></a></Link>
+                </div>
             </section>
         </main>
         <BrandFoot></BrandFoot>
