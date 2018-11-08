@@ -33,6 +33,57 @@ const Index = () => (
             <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
         </NextHead>
         <Navigation></Navigation>
+        <main className="app-root">
+            <section className="hero-app-mitglieder"></section>
+            <section className="content-container">
+                <div className="wrapper">
+                    <h1 className="headline-verein fadein-image">Vorstand</h1>
+                    <ul class="verein-desc verein-vorstand fadein animation1">
+                        <li>Vorsitzender<ul>
+                                <li>Arndt Kutzke</li>
+                            </ul></li>
+                        <li>2. Vorsitzender<ul>
+                                <li>Gerald Schmieder</li>
+                            </ul></li>
+                        <li>Geschäftsführer<ul>
+                                <li>Thomas Koch</li>
+                            </ul></li>
+                        <li>Schriftführer<ul>
+                                <li>Ina Kluge</li>
+                            </ul></li>
+                        <li>Leiter Schützengilde<ul>
+                                <li>Dietmar Kluge</li>
+                            </ul></li>
+                        <li>Öffentlichkeitsarbeit<ul>
+                                <li>Thomas Helke</li>
+                            </ul></li>
+                        <li>Schatzmeisterin<ul>
+                                <li>Peggy Kluge</li>
+                            </ul></li>
+                        <li>Revisionskommision<ul>
+                                <li>Helmut Heinze</li>
+                                <li>Hoyer Petra</li>
+                                <li>Kriegel Wolfgang</li>
+                            </ul></li>
+                        <li>Waffenmeister<ul>
+                                <li>David Kutzke</li>
+                            </ul></li>
+                        <li>Koopiertes Mitglied<ul>
+                                <li>Jens Barthel</li>
+                            </ul></li>
+                    </ul>
+                    <div className="mitgliedschaft verein-desc fadein-image animation2">
+                        <h1 className="headline">Mitglidschaft</h1>
+                        <ul className="verein-des">
+                            <li>Der Schützenverein Hohenfichte 1980 e.V. ruft 2-3 Mal im Jahr eine Mitgliederversammlung ein</li>
+                            <li>Vorstandssitzung ist einmal im Monat</li>
+                            <li>Die Aufnahme in den Verein ist schriftlich beim Vorstand einzureichen. Der Vorstand entscheidet über den Aufnahmeantrag.</li>
+                            <li><Link href="http://downloads.schuetzenverein-hohenfichte.de/satzungen/satzung-09032018.pdf" target="_blank"><a>Satzung des Vereins als pdf-Dokument laden</a></Link> (1,08 KB, Datei öffnet sich in einem externen Fenster. Sie werden zum Verzeichnis auf dem CDN-Server weitergeleitet)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
         <BrandFoot></BrandFoot>
     </div>
 )

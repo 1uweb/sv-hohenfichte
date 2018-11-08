@@ -33,6 +33,36 @@ const Index = () => (
             <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
         </NextHead>
         <Navigation></Navigation>
+        <main className="app-root">
+            <section className="hero-app-kontakt"></section>
+            <section className="kontaktdaten content-container">
+                <div className="wrapper">
+                    <div className="verein-desc">
+                        <h1 className="headline-verein fadein-image animation1">Kontakt</h1>
+                        <ul className="verein-vorsitzende fadein animation2">
+                            <li>Vorsitzender<ul>
+                                    <li>Arndt Kutzke</li>
+                                    <li>Fabrikweg 7</li>
+                                    <li>09573 Leubsdorf OT Hohenfichte</li>
+                                    <li>Telefon 037291 20401</li>
+                                </ul></li>
+                            <li>2. Vorsitzender<ul>
+                                    <li>Gerald Schmieder</li>
+                                    <li>Straße zur Lohe 13</li>
+                                    <li>09573 Leubsdorf OT Hohenfichte</li>
+                                    <li>Telefon 037291 20847</li>
+                                </ul></li>
+                            <li>Geschäftsführer<ul>
+                                    <li>Thomas Koch</li>
+                                    <li>Falkenauer Straße 2</li>
+                                    <li>09573 Augustusburg OT Grünberg</li>
+                                    <li>Telefon 037291 61004</li>
+                                </ul></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
         <BrandFoot></BrandFoot>
     </div>
 )

@@ -15,8 +15,35 @@ html, body
 
 h1, h2, h3, h4, h5, h6 
     hyphens: auto
-    font-family: 'Lora', serif;
+    font-family: 'Lora', serif
     font-weight: 700
+
+h1
+    font-size: 5rem
+    text-align: center
+
+h2
+    font-size: 4rem
+
+h3
+    font-size: 3rem
+
+h4
+    font-size: 2rem
+
+p
+    font-size: 1.4rem
+    line-height: 1.75
+
+ul
+    font-size: 1.4rem
+    line-height: 1.75
+
+p
+    font-weight: 300
+
+ul
+    font-weight: 300
 
 * 
     box-sizing: border-box
@@ -38,6 +65,7 @@ a
     text-decoration: none
     color: #425c51
     position: relative
+    font-weight: 500
 
 a:hover::after 
     transform: scaleX(1)
@@ -161,6 +189,7 @@ html.sr .load-hidden
     display: flex
     padding: 0
     margin: 0
+    line-height: 8rem
     list-style: none
 
 .global-nav nav ul li
@@ -188,6 +217,33 @@ html.sr .load-hidden
     color: #fafafa
     text-align: center
 
+.hero-app-verein
+    width: 100%
+    height: 92rem
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    background-image: url('https://static.uwe-barthel.net/sv-hohenfichte.de/header/10.jpg')
+    background-position: center
+    background-size: cover
+    font-size: 3rem
+    color: #fafafa
+
+.hero-app-mitglieder
+    width: 100%
+    height: 74rem
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    background-image: url('https://static.uwe-barthel.net/sv-hohenfichte.de/header/6.png')
+    background-position: center
+    background-size: cover
+    font-size: 3rem
+    color: #fafafa
+    text-align: center
+
 .hero-app-fest
     width: 100%
     height: 92rem
@@ -196,6 +252,20 @@ html.sr .load-hidden
     align-items: center
     position: relative
     background-image: url('https://static.uwe-barthel.net/sv-hohenfichte.de/header/5.jpg')
+    background-position: center
+    background-size: cover
+    font-size: 3rem
+    color: #fafafa
+    text-align: center
+
+.hero-app-kontakt
+    width: 100%
+    height: 92rem
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    background-image: url('https://static.uwe-barthel.net/sv-hohenfichte.de/header/27Jul2012_Schuetzenverein-Hohenfichte_6394.jpg')
     background-position: center
     background-size: cover
     font-size: 3rem
@@ -231,10 +301,6 @@ html.sr .load-hidden
 .fest
     background: #F5F5F5
 
-.fest h1
-    font-size: 3.5rem
-    text-align: center
-
 .fest p
     font-size: 1.4rem
     line-height: 1.5
@@ -257,6 +323,26 @@ html.sr .load-hidden
 .karte
     background: #F5F5F5
 
+.ergebniss-list 
+    font-size: 1.4rem
+    line-height: 3
+    font-weight: 500
+
+.ergebniss-list li ul 
+    padding: 0 2rem
+    font-weight: 400
+
+.verein-desc
+    font-size: 1.4rem
+    line-height: 3
+    font-weight: 500
+    list-style: none
+    padding: 0
+
+.verein-desc li ul 
+    padding: 0 3rem
+    font-weight: 400
+
 .mitglieder-werden
     width: 100%
     background: url('https://static.uwe-barthel.net/sv-hohenfichte.de/header/11.jpg')
@@ -264,6 +350,18 @@ html.sr .load-hidden
     background-position: center
     color: #fafafa
     text-align: center
+
+.verein-vorsitzende
+    font-size: 1.4rem
+    line-height: 3
+    font-weight: 500
+    list-style: none
+    padding: 0
+
+.verein-vorsitzende li ul
+    list-style: none
+    padding: 0 2rem
+    line-height: 2
 
 .mitglieder-werden h1
     font-size: 2.5rem
@@ -291,6 +389,7 @@ footer .home-nav ul
     display: flex
     justify-content: center
     list-style: none
+    line-height: 5rem
     padding: 0
     margin: 0
 
@@ -318,6 +417,7 @@ footer .legal-nav nav ul
     display: flex
     justify-content: center
     list-style: none
+    line-height: 7rem
     padding: 0
     margin: 0
 
